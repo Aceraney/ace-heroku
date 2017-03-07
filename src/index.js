@@ -1,6 +1,12 @@
-import React from 'react'
-import { render } from 'react-dom'
-import App from './components/app'
-import './styles/app.scss'
+import React from 'react';
+import Router from 'react-router';
+import ReactDOM from 'react-dom';
+import Main from "./components/Main";
+import routes from './config/routes';
+import './styles/custom.css'
 
-render(<App/>, document.getElementById('main'))
+
+
+
+
+ReactDOM.render(routes, document.getElementById('app'));

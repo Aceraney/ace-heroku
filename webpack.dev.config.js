@@ -23,16 +23,16 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js?$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         include: path.join(__dirname, 'src')
       },
-      { test: /\.scss?$/,
-        loader: 'style!css!sass',
+      { test: /\.css$/,
+  loader: "style-loader!css-loader",
         include: path.join(__dirname, 'src', 'styles') },
-      { test: /\.png$/,
-        loader: 'file' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        loader: 'file'}
+      
+      { test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
+    loader: 'url-loader?limit=30000',
+    include: path.join(__dirname, 'src') }
     ]
   }
 }
