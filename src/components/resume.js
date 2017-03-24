@@ -7,7 +7,7 @@ function resume () {
 
 			<div className= 'about-header-div'>
 				<h2 className = "about-header">
-			Resumee
+			Resume
 			</h2>
 			<p> Download my resume in PDF form: </p> <a href={resumepdf} download>Resume</a>
 			
