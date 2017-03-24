@@ -1,15 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router'
-
+import resumepdf from '../assets/resumepdf.pdf'
 
 function resume () {
 		return(
 
 			<div className= 'about-header-div'>
 				<h2 className = "about-header">
-			Resume
+			Resumee
 			</h2>
-			<p> Download my resume in PDF form: </p><Link to="https://drive.google.com/open?id=0B2BKOwsKVC2sTXhHcmtudlJjU3c">Resume</Link>
+			<p> Download my resume in PDF form: </p> <a href={resumepdf} download>Resume</a>
 			
 			</div>
 	)

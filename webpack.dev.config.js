@@ -30,7 +30,7 @@ module.exports = {
   loader: "style-loader!css-loader",
         include: path.join(__dirname, 'src', 'styles') },
       
-      { test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
+      { test: /\.(eot|woff|woff2|ttf|svg|png|jpg|pdf)$/,
     loader: 'url-loader?limit=30000',
     include: path.join(__dirname, 'src') }
     ]
