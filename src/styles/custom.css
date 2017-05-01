@@ -50,6 +50,16 @@ font-size: 20px;
 margin:50px;
 }
 
+#resume-link{
+color:black;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin:50px;
+text-decoration: underline;
+}
+
+
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -180,6 +190,11 @@ transform: translateY(-50%);
 .splash-div{
 	height:70%;
 }
+
+.menu-item:link{
+color:black;
+}
+
 
 
 
